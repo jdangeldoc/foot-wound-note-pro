@@ -1,0 +1,22 @@
+label,icd10,description,laterality,region_hint
+Abscess,L02.91,"Unspecified cutaneous abscess",Unspecified,General
+"Abscess of deep compartment of foot",L02.619,"Cutaneous abscess of other part of unspecified foot",Unspecified,Foot
+"Acute osteomyelitis (ankle/foot) RIGHT",M86.171,"Other acute osteomyelitis of right ankle and foot",Right,Foot
+"Acute osteomyelitis (ankle/foot) LEFT",M86.172,"Other acute osteomyelitis of left ankle and foot",Left,Foot
+"Chronic osteomyelitis (ankle/foot) RIGHT",M86.671,"Other chronic osteomyelitis of right ankle and foot",Right,Foot
+"Chronic osteomyelitis (ankle/foot) LEFT",M86.672,"Other chronic osteomyelitis of left ankle and foot",Left,Foot
+Cellulitis,L03.90,"Cellulitis unspecified",Unspecified,General
+"Diabetic ulcer (foot)",L97.509,"Non-pressure chronic ulcer of other part of foot unspecified severity",Unspecified,Foot
+"Diabetes with foot ulcer",E11.621,"Type 2 diabetes mellitus with foot ulcer",Unspecified,Foot
+"Diabetes with neuropathy",E11.40,"Type 2 diabetes mellitus with diabetic neuropathy unspecified",Unspecified,General
+"Peripheral vascular disease",I73.9,"Peripheral vascular disease unspecified",Unspecified,General
+"Atherosclerosis of native arteries of extremities",I70.209,"Atherosclerosis of native arteries of extremities unspecified",Unspecified,General
+Smoking,Z72.0,"Tobacco use",Unspecified,General
+Noncompliance,Z91.19,"Patient's noncompliance with other medical treatment and regimen",Unspecified,General
+"Morbid obesity",E66.01,"Morbid (severe) obesity due to excess calories",Unspecified,General
+COPD,J44.9,"Chronic obstructive pulmonary disease unspecified",Unspecified,General
+"Chronic kidney disease",N18.9,"Chronic kidney disease unspecified",Unspecified,General
+"Septic gangrene (unspecified)",A48.0,"Gas gangrene",Unspecified,General
+"Necrotizing fasciitis",M72.6,"Necrotizing fasciitis",Unspecified,General
+"Septic foot",R68.89,"Other general symptoms and signs - septic foot context",Unspecified,Foot
+"Dry gangrene",I96,"Gangrene not elsewhere classified",Unspecified,General

@@ -1,0 +1,7 @@
+domain,condition,body_area,depth,procedure,cpt,description,add_on,notes,laterality_applicability,bilateral_allowed,modifiers_suggest
+wound,Debridement,Any,bone,Debridement bone up to 20 cm2,11044,Debridement; bone first 20 sq cm,11047,Use 11047 x each additional 20 sq cm,No,No,
+wound,Debridement,Any,muscle,Debridement muscle/fascia up to 20 cm2,11043,Debridement; muscle/fascia first 20 sq cm,11046,Use 11046 x each additional 20 sq cm,No,No,
+wound,Debridement,Any,subq,Debridement subcutaneous up to 20 cm2,11042,Debridement; subcutaneous first 20 sq cm,11045,Use 11045 x each additional 20 sq cm,No,No,
+wound,Deep space I&D,Hand,deep,Incision and drainage deep hand space,26025,Deep hand space I&D,,Per compartment,Yes,No,
+wound,Deep space I&D,Foot,deep,Incision and drainage deep foot space,28003,Deep foot space I&D,,Per compartment,Yes,No,
+wound,Superficial I&D,Foot,superficial,Incision and drainage foot superficial,28002,Superficial foot I&D,,Per site,Yes,No,

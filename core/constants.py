@@ -1,0 +1,121 @@
+
+import os
+
+APP_NAME = "OrthoCoder Pro"
+VERSION = "2025.08.15-F5"
+
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+
+DEFAULTS = {
+    "vascularity": "Good",
+    "anesthesia": "General",
+    "indications": ["Induration", "Erythema", "Open wound"],
+    "clinical_dx": ["Abscess"],
+    "encounter_timing": "First encounter",
+    "closure_type": "Packing",
+    "packing_media": ["Saline gauze"],
+    "irrigation": ["Saline", "Betadine"],
+    "cultures": ["Swab"],
+    "biopsy": [],
+    "negative_pressure": "Silver",
+    "transport_status": "Stable",
+    "laterality": "Right"
+}
+
+ZONES = {
+    "body_front": [
+        ("Clavicle", (260, 140, 340, 170)),
+        ("Sternum", (280, 170, 320, 270)),
+        ("Ribs", (200, 170, 400, 330)),
+        ("Neck (anterior)", (260, 90, 340, 130)),
+        ("Shoulder (L)", (180, 160, 230, 210)),
+        ("Shoulder (R)", (370, 160, 420, 210)),
+        ("Arm/Humerus (L)", (170, 210, 230, 350)),
+        ("Arm/Humerus (R)", (370, 210, 430, 350)),
+        ("Elbow (L)", (170, 350, 230, 380)),
+        ("Elbow (R)", (370, 350, 430, 380)),
+        ("Forearm (L)", (170, 380, 230, 470)),
+        ("Forearm (R)", (370, 380, 430, 470)),
+        ("Wrist (L)", (175, 470, 225, 495)),
+        ("Wrist (R)", (375, 470, 425, 495)),
+        ("Pelvis (front)", (250, 330, 350, 400)),
+        ("Hips (L)", (220, 390, 260, 440)),
+        ("Hips (R)", (340, 390, 380, 440)),
+        ("Thigh (L)", (250, 430, 290, 610)),
+        ("Thigh (R)", (310, 430, 350, 610)),
+        ("Knee (L)", (250, 610, 290, 640)),
+        ("Knee (R)", (310, 610, 350, 640)),
+        ("Leg (L)", (250, 640, 290, 780)),
+        ("Leg (R)", (310, 640, 350, 780)),
+        ("Ankle (L)", (250, 780, 290, 820)),
+        ("Ankle (R)", (310, 780, 350, 820)),
+    ],
+    "body_back": [
+        ("Cervical spine", (280, 120, 320, 170)),
+        ("Thoracic spine", (280, 170, 320, 330)),
+        ("Lumbar spine", (280, 330, 320, 410)),
+        ("Pelvis (back)", (260, 410, 340, 460)),
+        ("Scapular (L)", (210, 170, 260, 240)),
+        ("Scapular (R)", (340, 170, 390, 240)),
+        ("Buttock (L)", (240, 460, 280, 530)),
+        ("Buttock (R)", (320, 460, 360, 530)),
+        ("Shoulder (L)", (180, 160, 230, 210)),
+        ("Shoulder (R)", (370, 160, 420, 210)),
+        ("Arm/Humerus (L)", (170, 210, 230, 350)),
+        ("Arm/Humerus (R)", (370, 210, 430, 350)),
+        ("Elbow (L)", (170, 350, 230, 380)),
+        ("Elbow (R)", (370, 350, 430, 380)),
+        ("Forearm (L)", (170, 380, 230, 470)),
+        ("Forearm (R)", (370, 380, 430, 470)),
+        ("Wrist (L)", (175, 470, 225, 495)),
+        ("Wrist (R)", (375, 470, 425, 495)),
+    ],
+    "hands": [
+        ("Dorsum hand (L)", (150, 120, 230, 220)),
+        ("Volar hand (L)", (80, 120, 140, 220)),
+        ("Thumb (L)", (60, 160, 90, 210)),
+        ("Index finger (L)", (170, 60, 185, 140)),
+        ("Long finger (L)", (190, 60, 205, 140)),
+        ("Ring finger (L)", (210, 60, 225, 140)),
+        ("Small finger (L)", (230, 60, 245, 140)),
+        ("Dorsum hand (R)", (570, 120, 650, 220)),
+        ("Volar hand (R)", (660, 120, 720, 220)),
+        ("Thumb (R)", (730, 160, 760, 210)),
+        ("Index finger (R)", (585, 60, 600, 140)),
+        ("Long finger (R)", (605, 60, 620, 140)),
+        ("Ring finger (R)", (625, 60, 640, 140)),
+        ("Small finger (R)", (645, 60, 660, 140)),
+    ],
+    "feet": [
+        ("Dorsum foot (L)", (140, 120, 230, 200)),
+        ("Plantar foot (L)", (80, 120, 130, 200)),
+        ("Heel/Calcaneus (L)", (60, 200, 130, 260)),
+        ("Sinus tarsi (L)", (140, 200, 200, 260)),
+        ("Great toe (L)", (230, 90, 260, 120)),
+        ("Second toe (L)", (260, 90, 290, 120)),
+        ("Third toe (L)", (290, 90, 320, 120)),
+        ("Fourth toe (L)", (320, 90, 350, 120)),
+        ("Fifth toe (L)", (350, 90, 380, 120)),
+        ("Dorsum foot (R)", (560, 120, 650, 200)),
+        ("Plantar foot (R)", (670, 120, 720, 200)),
+        ("Heel/Calcaneus (R)", (670, 200, 740, 260)),
+        ("Sinus tarsi (R)", (520, 200, 580, 260)),
+        ("Great toe (R)", (520, 90, 550, 120)),
+        ("Second toe (R)", (490, 90, 520, 120)),
+        ("Third toe (R)", (460, 90, 490, 120)),
+        ("Fourth toe (R)", (430, 90, 460, 120)),
+        ("Fifth toe (R)", (400, 90, 430, 120))
+    ]
+}
+
+HAND_FOOT_AREAS = {"Dorsum hand (L)", "Volar hand (L)", "Thumb (L)", "Index finger (L)",
+                   "Long finger (L)", "Ring finger (L)", "Small finger (L)",
+                   "Dorsum hand (R)", "Volar hand (R)", "Thumb (R)", "Index finger (R)",
+                   "Long finger (R)", "Ring finger (R)", "Small finger (R)",
+                   "Dorsum foot (L)", "Plantar foot (L)", "Heel/Calcaneus (L)",
+                   "Sinus tarsi (L)", "Great toe (L)", "Second toe (L)",
+                   "Third toe (L)", "Fourth toe (L)", "Fifth toe (L)",
+                   "Dorsum foot (R)", "Plantar foot (R)", "Heel/Calcaneus (R)",
+                   "Sinus tarsi (R)", "Great toe (R)", "Second toe (R)",
+                   "Third toe (R)", "Fourth toe (R)", "Fifth toe (R)"
+                  }
