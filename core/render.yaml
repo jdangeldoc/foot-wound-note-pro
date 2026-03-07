@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: orthocoder-pro
+    runtime: python
+    plan: standard
+    envVars:
+      - key: PIP_ONLY_BINARY
+        value: ":all:"
+      - key: PIP_PREFER_BINARY
+        value: "1"
+      - key: PYTHON_VERSION
+        value: "3.11.6"
+    buildCommand: |
+      python -m pip install --upgrade pip setuptools wheel
+      python -m pip install --only-binary=:all: --prefer-binary -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0

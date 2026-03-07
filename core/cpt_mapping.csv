@@ -1,0 +1,12 @@
+procedure_category,procedure_subtype,depth,instrument,area_min,area_max,vascularity,contamination,cpt_code,icd10_default,notes
+Debridement,Subcutaneous Tissue,Subcutaneous Tissue,scalpel,0,20,Any,Any,11042,L97.509,First 20 cm2
+Debridement,Subcutaneous Tissue,Subcutaneous Tissue,Any,20,9999,Any,Any,11045,,Each additional 20 cm2
+Debridement,Fascia/Muscle,Fascia/Muscle,scalpel,0,20,Any,Any,11043,L97.509,First 20 cm2
+Debridement,Fascia/Muscle,Fascia/Muscle,Any,20,9999,Any,Any,11046,,Each additional 20 cm2
+Debridement,Bone,Bone,rongeur,0,20,Any,Any,11044,M86.9,First 20 cm2
+Debridement,Bone,Bone,Any,20,9999,Any,Any,11047,,Each additional 20 cm2
+Incision & Drainage,Abscess,N/A,scalpel,0,9999,Any,Simple,10060,L02.419,Single/simple
+Incision & Drainage,Abscess,N/A,scalpel,0,9999,Any,Complicated/Multiple,10061,L02.419,Complicated/multiple
+Joint Injection,Major joint,N/A,needle,0,9999,Any,Any,20610,M25.50,Default major joint inj
+Foreign Body Removal,Subcutaneous,N/A,forceps,0,9999,Any,Any,10120,T79.5XXA,Default
+Wound Closure,Intermediate,N/A,needle,0,2.5,Any,Any,12031,S01.80XA,Default < 2.5cm trunk/ext
